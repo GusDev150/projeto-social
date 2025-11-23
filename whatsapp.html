@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/social.css">
+    <title>WhatsApp</title>
+</head>
+<body>
+    <img src="imagens/WhatsApp page.jpg" alt="WhatsApp">
+    <a href="home.html" id="copiar">ACESSE</a>
+
+    <script>
+        document.getElementById('copiar').addEventListener("click", function () {
+            const texto = '(11) 96834-0210'
+        })
+
+        document.getElementById("copiar").addEventListener("click", function () {
+             const texto = "(11) 96824-0210";
+
+        navigator.clipboard.writeText(texto)
+            .then(() => {
+                alert("Número copiado!");
+            })
+            .catch(() => {
+                alert("Erro ao copiar!");
+        });
+});
+    </script>
+</body>
+</html>
